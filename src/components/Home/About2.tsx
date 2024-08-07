@@ -5,7 +5,7 @@ type Props = {};
 
 const About2 = (props: Props) => {
   return (
-    <div className="flex justify-center items-center">
+    <div className="flex gap-12 justify-center items-center">
       <div className="w-[40%]">
         <Image
           src={"/assets/about2.png"}
@@ -14,13 +14,13 @@ const About2 = (props: Props) => {
           height={409.63}
         />
       </div>
-      <div className="w-[40%]">
-        <h1 className="text-4xl">
-          Join <span className="text-[#20b486]">World's largest</span> learning
+      <div className="w-[40%] font-publicsans flex flex-col justify-center items-start gap-8">
+        <h1 className="text-4xl font-semibold">
+          Join <span className="text-[#20b486] ">World's largest</span> learning
           platform today
         </h1>
-        <h4>Start learning by registering for free</h4>
-        <button className="px-8 py-4 text-white">Sign up for Free</button>
+        <h4 className="text-lg ">Start learning by registering for free</h4>
+        <button className="px-8 py-4 text-white bg-[#20B486] rounded-lg">Sign up for Free</button>
       </div>
     </div>
   );

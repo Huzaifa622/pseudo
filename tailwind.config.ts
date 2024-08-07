@@ -13,6 +13,7 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
         herobanner: "url('/assets/hero.png')",
+        footer: "url('/assets/footer.png')",
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
@@ -22,6 +23,7 @@ const config: Config = {
         mulish: ["Mulish"],
         saira: ["Saira"],
         ubuntu: ["Ubuntu"],
+        publicsans: ["Public Sans"],
       },
     },
   },

@@ -3,6 +3,7 @@ import About2 from "@/components/Home/About2";
 import Companies from "@/components/Home/Companies";
 import Herobanner from "@/components/Home/Herobanner";
 import Teachers from "@/components/Home/Teachers";
+import Footer from "@/components/ui/Footer";
 import Navbar from "@/components/ui/Navbar";
 import Image from "next/image";
 
@@ -15,6 +16,7 @@ export default function Home() {
       <Teachers />
       <About1 />
       <About2 />
+      <Footer />
     </div>
   );
 }
