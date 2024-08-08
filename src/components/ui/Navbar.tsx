@@ -93,10 +93,16 @@ const Navbar = (props: Props) => {
             Blogs
           </Link>
         </ul>
-        <Avatar>
-          <AvatarImage src="https://github.com/shadcn.png" />
-          <AvatarFallback>CN</AvatarFallback>
-        </Avatar>
+        <Link href={"/profile"}>
+          <Avatar
+            className={cn(
+              pathname === "/profile" ? "border-2  border-green-600" : ""
+            )}
+          >
+            <AvatarImage src="https://github.com/shadcn.png" />
+            <AvatarFallback>CN</AvatarFallback>
+          </Avatar>
+        </Link>
       </nav>
     </div>
   );
