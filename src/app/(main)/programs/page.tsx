@@ -1,7 +1,7 @@
 import Footer from "@/components/ui/Footer";
 import Navbar from "@/components/ui/Navbar";
-import Hero from "@/components/universities/Hero";
-import UniversitySection from "@/components/universities/UniversitySection";
+import Hero from "@/components/programs/Hero";
+import ProgramSection from "@/components/programs/ProgramSection";
 import React from "react";
 
 type Props = {};
@@ -11,7 +11,7 @@ const Universities = (props: Props) => {
     <div>
       <Navbar />
       <Hero />
-      <UniversitySection />
+      <ProgramSection />
       <Footer />
     </div>
   );

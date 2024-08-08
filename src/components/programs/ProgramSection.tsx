@@ -1,6 +1,6 @@
 import { Search } from "lucide-react";
 import React from "react";
-import UniversityCard from "./UniversityCard";
+import ProgramCard from "./ProgramCard";
 
 type Props = {};
 
@@ -40,15 +40,15 @@ const UniversitySection = (props: Props) => {
         </button>
       </div>
       <h2 className="text-2xl font-bold my-4">Find your program</h2>
-      <div className="flex flex-wrap justify-center items-center gap-x-6 gap-y-12">
-        <UniversityCard />
-        <UniversityCard />
-        <UniversityCard />
-        <UniversityCard />
-        <UniversityCard />
-        <UniversityCard />
-        <UniversityCard />
-        <UniversityCard />
+      <div className="flex flex-wrap justify-center items-center gap-x-6 gapProgram-y-12">
+        <ProgramCard />
+        <ProgramCard />
+        <ProgramCard />
+        <ProgramCard />
+        <ProgramCard />
+        <ProgramCard />
+        <ProgramCard />
+        <ProgramCard />
       </div>
     </div>
   );
