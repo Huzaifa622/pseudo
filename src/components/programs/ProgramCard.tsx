@@ -3,7 +3,7 @@ import React from "react";
 
 type Props = {};
 
-const UniversityCard = (props: Props) => {
+const ProgramCard = (props: Props) => {
   return (
     <div className="relative flex flex-col justify-around w-[332px] h-[396px] rounded-lg p-4 font-poppins shadow-xl">
       <div className="flex justify-between text-xs">
@@ -28,4 +28,4 @@ const UniversityCard = (props: Props) => {
   );
 };
 
-export default UniversityCard;
+export default ProgramCard;

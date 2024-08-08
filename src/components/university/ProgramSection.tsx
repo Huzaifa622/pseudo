@@ -4,7 +4,7 @@ import ProgramCard from "./ProgramCard";
 
 type Props = {};
 
-const ProgramSection = (props: Props) => {
+const UniversitySection = (props: Props) => {
   return (
     <div className="py-10 px-16">
       <div className="flex gap-4 mb-8">
@@ -54,4 +54,4 @@ const ProgramSection = (props: Props) => {
   );
 };
 
-export default ProgramSection;
+export default UniversitySection;
