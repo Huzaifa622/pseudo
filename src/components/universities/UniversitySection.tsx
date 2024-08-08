@@ -1,12 +1,12 @@
 import { Search } from "lucide-react";
 import React from "react";
+import UniversityCard from "./UniversityCard";
 
 type Props = {};
 
 const UniversitySection = (props: Props) => {
   return (
     <div className="py-10 px-16">
-      <h2 className="text-2xl font-bold mb-4">Find your program</h2>
       <div className="flex gap-4 mb-8">
         <select className="flex-1  px-4 rounded-lg text-[#7E7E7E] shadow-xl py-4">
           <option value="" disabled selected>
@@ -26,7 +26,6 @@ const UniversitySection = (props: Props) => {
           <option value="Business">Business</option>
           <option value="Arts">Arts</option>
           <option value="Science">Science</option>
-          {/* Add more fields of study as needed */}
         </select>
       </div>
       <div className="flex gap-4">
@@ -39,6 +38,17 @@ const UniversitySection = (props: Props) => {
           <Search />
           Search
         </button>
+      </div>
+      <h2 className="text-2xl font-bold my-4">Find your program</h2>
+      <div className="flex flex-wrap justify-center items-center gap-x-6 gap-y-12">
+        <UniversityCard />
+        <UniversityCard />
+        <UniversityCard />
+        <UniversityCard />
+        <UniversityCard />
+        <UniversityCard />
+        <UniversityCard />
+        <UniversityCard />
       </div>
     </div>
   );
