@@ -40,7 +40,7 @@ const ProgramSection = (props: Props) => {
         </button>
       </div>
       <h2 className="text-2xl font-bold my-4">Find your program</h2>
-      <div className="flex flex-wrap justify-center items-center gap-x-6 gapProgram-y-12">
+      <div className="flex flex-wrap justify-center items-center gap-x-6 gap-y-12">
         <ProgramCard />
         <ProgramCard />
         <ProgramCard />
