@@ -15,7 +15,7 @@ const Navbar = (props: Props) => {
     <div className="w-[80%] mx-auto py-2 font-ubuntu flex justify-between items-center">
       <Logo />
 
-      <nav className="flex items-center gap-24 text-sm font-semibold">
+      <nav className=" hidden lg:flex   items-center gap-24 text-sm font-semibold">
         <ul className="flex gap-10">
           <Link
             href={"/"}
