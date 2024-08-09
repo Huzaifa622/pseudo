@@ -20,7 +20,7 @@ const UniversityCard = ({
   views,
 }: Props) => {
   return (
-    <div className="w-full md:w-[40%] lg:w-[30%]  font-poppins rounded-lg p-4 shadow-xl">
+    <div className="w-full bg-white md:w-[40%] lg:w-[30%] h-[450px]  font-poppins rounded-lg p-4 hover:shadow-2xl hover:transition-all hover:duration-300 border">
       <Image src={image} alt="asd" width={422.83} height={224.63} />
       <div className="py-4">
         <h1 className="font-semibold">{title}</h1>

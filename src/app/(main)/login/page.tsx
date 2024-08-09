@@ -7,8 +7,8 @@ type Props = {};
 
 const Login = (props: Props) => {
   return (
-    <div className=" font-poppins  flex justify-around items-center overflow-hidden  ">
-      <div className=" w-[40%] pl-12 py-8 ">
+    <div className=" font-poppins bg-white  flex justify-around items-center overflow-hidden  ">
+      <div className=" w-full lg:w-[40%] pl-12 py-8 ">
         <div className="py-4">
           <Logo />
         </div>
@@ -99,7 +99,7 @@ const Login = (props: Props) => {
           </form>
         </div>
       </div>
-      <div className="">
+      <div className="lg:block hidden">
         <Image src={"/assets/login.png"} alt="logo" width={592} height={492} />
       </div>
     </div>

@@ -10,7 +10,7 @@ type Props = {
 
 const HomeCard = ({ image, title, profession }: Props) => {
   return (
-    <div className="relative w-[313px] h-[545px] font-poppins flex flex-col  justify-center  gap-4 p-4 rounded-xl shadow-xl">
+    <div className="relative bg-white w-[313px] h-[545px] font-poppins flex flex-col  justify-center  gap-4 p-4 rounded-xl hover:shadow-xl hover:transition-all hover:duration-300 border">
       <div className="absolute bottom-16 right-8">
         <Image
           src={"/assets/Group.png"}

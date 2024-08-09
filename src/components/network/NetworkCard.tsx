@@ -24,7 +24,7 @@ const NetworkCard = ({
   price,
 }: Props) => {
   return (
-    <div className="w-[230.06px] h-[315.23px]">
+    <div className="w-[230.06px]  bg-white hover:shadow-2xl hover:transition-all hover:duration-300">
       <div className=" border rounded-sm flex flex-col justify-between">
         <Image src={image} alt="asd" width={228.3} height={228.3} />
         <div className="p-2 flex flex-col justify-between  gap-2">
@@ -55,17 +55,17 @@ const NetworkCard = ({
             {stars}({ratings})
           </div>
         </div>
-      </div>
-      <div className="border border-t-none py-2 px-2 flex justify-between items-center">
-        <div className="flex items-center gap-2">
-          <Menu size={24} color="#B5B6BA" />
-          <Heart size={24} color="#B5B6BA" />
-        </div>
-        <div className="">
-          <h4 className="uppercase text-[8px] text-[#74767E] font-bold">
-            Starting at
-          </h4>
-          <h1>₹{price}</h1>
+        <div className="border-t py-2 px-2 flex justify-between items-center">
+          <div className="flex items-center gap-2">
+            <Menu size={24} color="#B5B6BA" />
+            <Heart size={24} color="#B5B6BA" />
+          </div>
+          <div className="">
+            <h4 className="uppercase text-[8px] text-[#74767E] font-bold">
+              Starting at
+            </h4>
+            <h1>₹{price}</h1>
+          </div>
         </div>
       </div>
     </div>

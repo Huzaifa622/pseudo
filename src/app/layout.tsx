@@ -17,7 +17,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={` "font-poppins ${inter.className}`}>
-        <div className="max-w-screen-2xl mx-auto overflow-x-hidden">{children}</div>
+        <div
+          className="max-w-screen-2xl mx-auto overflow-x-hidden bg-[#F7F6F4]
+        "
+        >
+          {children}
+        </div>
       </body>
     </html>
   );

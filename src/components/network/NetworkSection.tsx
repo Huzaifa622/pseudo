@@ -95,7 +95,7 @@ const networks = [
 const NetworkSection = (props: Props) => {
   return (
     <div className="py-4 px-8 flex flex-col justify-center items-center gap-10">
-      <div className="relative w-[70%] mx-auto">
+      <div className="relative w-full lg:w-[70%] mx-auto">
         <input
           type="text"
           className="w-full py-2 px-4 pr-12 rounded-sm border border-gray-300"
@@ -105,15 +105,15 @@ const NetworkSection = (props: Props) => {
           <Search />
         </button>
       </div>
-      <div className="flex justify-center items-start w-full gap-5">
-        <aside className="w-1/3 p-2  rounded-md border-gray-300">
+      <div className="flex lg:flex-row flex-col justify-center items-start w-full gap-5">
+        <aside className="w-full lg:w-[40%] p-2 bg-white border rounded-md border-gray-300">
           <Accordion
             type="multiple"
-            className="w-full border"
+            className="w-full "
             defaultValue={["item-1", "item-2", "item-3"]}
           >
             <AccordionItem value="item-1">
-              <AccordionTrigger className="bg-[#f1f5fb] border px-6 mb-2 text-xl font-semibold">
+              <AccordionTrigger className="bg-[#f1f5fb]  px-6 mb-2 text-xl font-semibold">
                 Category
               </AccordionTrigger>
               <AccordionContent className="flex justify-center items-center py-4 px-4">
@@ -167,7 +167,7 @@ const NetworkSection = (props: Props) => {
             </button>
           </div>
         </aside>
-        <div className="flex flex-wrap items-center   gap-x-2  gap-y-20">
+        <div className="flex flex-wrap items-center justify-center   gap-x-2  gap-y-20">
           {networks.map((n, idx) => (
             <div key={idx}>
               <NetworkCard

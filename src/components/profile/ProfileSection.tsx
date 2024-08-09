@@ -1,4 +1,5 @@
 import { Avatar, AvatarFallback, AvatarImage } from "@radix-ui/react-avatar";
+import Link from "next/link";
 import React from "react";
 
 type Props = {};
@@ -7,11 +8,14 @@ const ProfileSection = (props: Props) => {
   return (
     <div className="px-28 py-16 font-ubuntu">
       <div className="flex justify-end px-8">
-        <button className="bg-[#e5f2f2] text-[#008080] px-6 py-2 rounded-lg">
+        <Link
+          href={"/contact"}
+          className="bg-[#e5f2f2] text-[#008080] px-6 py-2 rounded-lg"
+        >
           Contact Us
-        </button>
+        </Link>
       </div>
-      <div className="flex flex-col px-2">
+      <div className="flex flex-col px-2">  
         <h1 className="text-5xl text-center font-bold text-[#008080]">
           Profile
         </h1>
@@ -34,8 +38,8 @@ const ProfileSection = (props: Props) => {
           </button>
         </div>
       </div>
-      <div className="border border-gray-300 px-8 py-4 relative rounded-lg">
-        <label className="absolute -top-3 left-3 bg-white px-2 text-gray-600">
+      <div className="border bg-white shadow-2xl border-gray-300 px-8 py-4 relative rounded-lg">
+        <label className="absolute -top-5 font-bold left-3 text-2xl px-2 text-gray-600">
           Personal Info
         </label>
         <form>
@@ -162,8 +166,8 @@ const ProfileSection = (props: Props) => {
           </div>
         </form>
       </div>
-      <div className="border border-gray-300 px-8 py-4 relative rounded-lg mt-8">
-        <label className="absolute -top-3 left-3 bg-white px-2 text-gray-600">
+      <div className="border bg-white shadow-2xl border-gray-300 px-8 py-4 relative rounded-lg mt-16">
+        <label className="absolute -top-5 font-bold left-3 text-2xl px-2 text-gray-600">
           Contact Info
         </label>
         <form>
