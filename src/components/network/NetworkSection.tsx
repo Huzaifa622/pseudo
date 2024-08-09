@@ -94,7 +94,7 @@ const networks = [
 ];
 const NetworkSection = (props: Props) => {
   return (
-    <div className="py-4 px-8 flex flex-col gap-10">
+    <div className="py-4 px-8 flex flex-col justify-center items-center gap-10">
       <div className="relative w-[70%] mx-auto">
         <input
           type="text"
@@ -105,16 +105,20 @@ const NetworkSection = (props: Props) => {
           <Search />
         </button>
       </div>
-      <div className="flex">
-        <aside className="w-[25%] p-2  rounded-md border-gray-300">
-          <Accordion type="multiple" className="w-full border   ">
+      <div className="flex justify-center items-start w-full gap-5">
+        <aside className="w-1/3 p-2  rounded-md border-gray-300">
+          <Accordion
+            type="multiple"
+            className="w-full border"
+            defaultValue={["item-1", "item-2", "item-3"]}
+          >
             <AccordionItem value="item-1">
               <AccordionTrigger className="bg-[#f1f5fb] border px-6 mb-2 text-xl font-semibold">
                 Category
               </AccordionTrigger>
               <AccordionContent className="flex justify-center items-center py-4 px-4">
-                <select className="w-[95%] py-4 px-4 rounded-md border  border-gray-300">
-                  <option value="" disabled selected className="">
+                <select className="w-[95%] py-4 px-4 rounded-md border border-gray-300">
+                  <option value="" disabled selected>
                     Category
                   </option>
                   <option value="cat1">Category 1</option>
@@ -123,13 +127,14 @@ const NetworkSection = (props: Props) => {
                 </select>
               </AccordionContent>
             </AccordionItem>
+
             <AccordionItem value="item-2">
               <AccordionTrigger className="bg-[#f1f5fb] border mb-2 px-6 text-xl font-semibold">
                 Topic
               </AccordionTrigger>
               <AccordionContent className="flex justify-center items-center py-4 px-4">
                 <select className="w-[95%] py-4 px-4 rounded-md border border-gray-300">
-                  <option value="" disabled selected className="">
+                  <option value="" disabled selected>
                     Topic
                   </option>
                   <option value="topic1">Topic 1</option>
@@ -138,13 +143,14 @@ const NetworkSection = (props: Props) => {
                 </select>
               </AccordionContent>
             </AccordionItem>
+
             <AccordionItem value="item-3">
               <AccordionTrigger className="bg-[#f1f5fb] border px-6 mb-2 text-xl font-semibold">
                 Topic
               </AccordionTrigger>
               <AccordionContent className="flex justify-center items-center py-4 px-4">
                 <select className="w-[95%] py-4 px-4 rounded-md border border-gray-300">
-                  <option value="" disabled selected className="">
+                  <option value="" disabled selected>
                     Topic
                   </option>
                   <option value="topic1">Topic 1</option>
@@ -154,13 +160,14 @@ const NetworkSection = (props: Props) => {
               </AccordionContent>
             </AccordionItem>
           </Accordion>
+
           <div className="flex justify-center items-center">
             <button className="w-[90%] py-3  bg-[#02214F] text-white font-bold rounded-sm font-ubuntu text-xl">
               Search
             </button>
           </div>
         </aside>
-        <div className="flex flex-wrap items-center justify-center w-[90%] gap-x-2  gap-y-20">
+        <div className="flex flex-wrap items-center   gap-x-2  gap-y-20">
           {networks.map((n, idx) => (
             <div key={idx}>
               <NetworkCard
