@@ -68,7 +68,7 @@ const university = [
 ];
 const UniversitySection = (props: Props) => {
   return (
-    <div className="py-10 px-16">
+    <div className="py-10 px-8 md:px-16">
       <h2 className="text-2xl font-bold my-4">Find your program</h2>
       <div className="flex gap-4 mb-8">
         <select className="flex-1  px-4 rounded-lg text-[#7E7E7E] shadow-xl py-4">
@@ -103,18 +103,17 @@ const UniversitySection = (props: Props) => {
         </button>
       </div>
 
-      <div className="flex flex-wrap justify-center items-center py-12 gap-x-1 gap-y-12">
+      <div className="flex w-full flex-wrap  items-center justify-center  py-12 gap-x-4 gap-y-12">
         {university.map((u, idx) => (
-          <div key={idx}>
-            <UniversityCard
-              image={u.Image}
-              name={u.name}
-              title={u.title}
-              description={u.description}
-              views={u.views}
-              pImage={u.pImage}
-            />
-          </div>
+          <UniversityCard
+            key={idx}
+            image={u.Image}
+            name={u.name}
+            title={u.title}
+            description={u.description}
+            views={u.views}
+            pImage={u.pImage}
+          />
         ))}
       </div>
     </div>

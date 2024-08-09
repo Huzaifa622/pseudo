@@ -160,7 +160,7 @@ const NetworkSection = (props: Props) => {
             </button>
           </div>
         </aside>
-        <div className="flex flex-wrap items-center justify-center w-[90%] gap-x-2  gap-y-8">
+        <div className="flex flex-wrap items-center justify-center w-[90%] gap-x-2  gap-y-20">
           {networks.map((n, idx) => (
             <div key={idx}>
               <NetworkCard

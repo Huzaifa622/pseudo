@@ -5,6 +5,17 @@ import Link from "next/link";
 import { Avatar, AvatarFallback, AvatarImage } from "./avatar";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
+import { FiAlignLeft, FiAlignRight } from "react-icons/fi";
+import {
+  Sheet,
+  SheetContent,
+  SheetDescription,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+  SheetClose,
+  SheetFooter,
+} from "@/components/ui/sheet";
 
 type Props = {};
 
@@ -92,6 +103,22 @@ const Navbar = (props: Props) => {
             ></div>
             Blogs
           </Link>
+          <Link
+            className={cn(
+              "relative",
+              pathname === "/login" && "text-[#008080]"
+            )}
+            href={"/login"}
+          >
+            <div
+              className={cn(
+                pathname === "/login"
+                  ? "before:absolute before:w-full before:h-[1px] before:bg-[#008080] before:bottom-0 before:left-0"
+                  : ""
+              )}
+            ></div>
+            Login
+          </Link>
         </ul>
         <Link href={"/profile"}>
           <Avatar
@@ -104,6 +131,57 @@ const Navbar = (props: Props) => {
           </Avatar>
         </Link>
       </nav>
+      <div className="lg:hidden ">
+        <Sheet>
+          <SheetTrigger asChild>
+            <FiAlignRight size={25} />
+          </SheetTrigger>
+          <SheetContent className="text-white bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10  border-l border-gray-100">
+            <SheetHeader>
+              <SheetTitle className="text-4xl font-saira">
+                <Logo />
+              </SheetTitle>
+              <div className="flex flex-col justify-evenly mt-14 items-center py-4 text-lg h-[50vh]">
+                <SheetDescription className="flex flex-col items-center gap-4">
+                  <SheetClose>
+                    <Link href={"/"}>
+                      <>Home</>
+                    </Link>
+                  </SheetClose>
+                  <SheetClose asChild>
+                    <Link href={"/network"}> Network side</Link>
+                  </SheetClose>
+                  <SheetClose asChild>
+                    <Link href={"/llm"}> LLM</Link>
+                  </SheetClose>
+
+                  <SheetClose asChild>
+                    <Link href={"/university"}> University Side</Link>
+                  </SheetClose>
+
+                  <SheetClose asChild>
+                    <Link href={"/blogs"}> Blogs</Link>
+                  </SheetClose>
+                  <SheetClose asChild>
+                    <Link href={"/profile"}>
+                      <Avatar
+                        className={cn(
+                          pathname === "/profile"
+                            ? "border-2  border-green-600"
+                            : ""
+                        )}
+                      >
+                        <AvatarImage src="https://github.com/shadcn.png" />
+                        <AvatarFallback>CN</AvatarFallback>
+                      </Avatar>
+                    </Link>
+                  </SheetClose>
+                </SheetDescription>
+              </div>
+            </SheetHeader>
+          </SheetContent>
+        </Sheet>
+      </div>
     </div>
   );
 };

@@ -5,8 +5,8 @@ type Props = {};
 
 const About2 = (props: Props) => {
   return (
-    <div className="flex gap-12 justify-center items-center">
-      <div className="w-[40%]">
+    <div className="flex gap-12 flex-wrap justify-center items-center">
+      <div className="w-full md:w-[40%]">
         <Image
           src={"/assets/about2.png"}
           alt="asd"
@@ -20,7 +20,9 @@ const About2 = (props: Props) => {
           platform today
         </h1>
         <h4 className="text-lg ">Start learning by registering for free</h4>
-        <button className="px-8 py-4 text-white bg-[#20B486] rounded-lg">Sign up for Free</button>
+        <button className="px-8 py-4 text-white bg-[#20B486] rounded-lg">
+          Sign up for Free
+        </button>
       </div>
     </div>
   );

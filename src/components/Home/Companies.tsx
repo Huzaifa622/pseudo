@@ -24,7 +24,7 @@ const logos = [
 ];
 const Companies = (props: Props) => {
   return (
-    <div className="flex justify-center gap-8 items-center p-4 py-12 ">
+    <div className="flex flex-wrap justify-center gap-8 items-center p-4 py-12 ">
       {logos.map((l, idx) => (
         <div key={idx}>
           <Image

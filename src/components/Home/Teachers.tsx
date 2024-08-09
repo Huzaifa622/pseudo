@@ -36,7 +36,7 @@ const Teachers = (props: Props) => {
             <span>See All</span>
           </button>
         </div>
-        <div className="flex  gap-4  justify-center items-center">
+        <div className="flex flex-wrap gap-4  justify-center items-center">
           {teachers.map((t, idx) => (
             <div key={idx}>
               <HomeCard
