@@ -11,6 +11,7 @@ import {
 import { Search } from "lucide-react";
 import RecommededBtn from "./RecommededBtn";
 import AICard from "./AICard";
+import Link from "next/link";
 type Props = {};
 const program = [
   {
@@ -74,9 +75,12 @@ const AISection = (props: Props) => {
   return (
     <div className="px-18 py-16 font-ubuntu">
       <div className="flex justify-center md:justify-end px-8 py-4">
-        <button className="bg-[#e5f2f2] text-[#008080] px-6 py-2 rounded-lg">
+        <Link
+          href="/contact"
+          className="bg-[#e5f2f2] text-[#008080] px-6 py-2 rounded-lg"
+        >
           Contact Us
-        </button>
+        </Link>
       </div>
       <div className="flex flex-col px-2">
         <div className="flex justify-center">
