@@ -4,6 +4,8 @@ import { Eye } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
+import { CiLocationOn } from "react-icons/ci";
+import { MdOutlineLocationOn } from "react-icons/md";
 
 type Props = {
   image: string;
@@ -35,7 +37,7 @@ const UniversityCard = ({
         isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
       )}
     >
-      <div className="  font-poppins flex flex-col justify-center items-center  p-4 ">
+      <div className="  font-poppins flex flex-col justify-center items-center  p-6 ">
         <div className="w-44 h-28">
           <Image src={image} alt="asd" width={422.83} height={224.63} />
         </div>
@@ -56,12 +58,21 @@ const UniversityCard = ({
           <h4>{name}</h4>
         </div> */}
           {/* <p className="pb-8 text-[#696984] text-xs">{description}</p> */}
-          <div className="flex flex-col gap-2 justify-between text-[#696984]">
+          <div className="flex flex-col gap-4 pt-5 justify-between text-[#696984]">
             <div className="flex items-center gap-2">
-              <div className="bg-pink-50 p-2 rounded-xl">
-                <Eye size={24} color="#D93471" />
+              <div className="bg-[#ECE9EE] p-3 rounded-xl">
+                <Eye size={24} color="#49275C" />
               </div>
               {views}
+            </div>
+            <div className="flex items-center gap-2">
+              <div className="bg-[#ECE9EE] p-3 rounded-xl">
+                <MdOutlineLocationOn size={24} color="#49275C" />
+              </div>
+              <div>
+                <h1 className="text-sm">Location</h1>{" "}
+                <h1 className="text-[#49275C] font-medium">Germany</h1>{" "}
+              </div>
             </div>
             <button className="bg-pink-50 w-full text-[#D93471] rounded-xl hover:bg-pink-100   py-2 ">
               Read More

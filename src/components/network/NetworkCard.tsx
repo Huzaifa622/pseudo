@@ -1,7 +1,8 @@
 "use client";
+import { cn } from "@/lib/utils";
 import { Menu, Star, Heart } from "lucide-react";
 import Image from "next/image";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { IoHeartSharp } from "react-icons/io5";
 
 type Props = {
@@ -25,9 +26,19 @@ const NetworkCard = ({
   ratings,
   price,
 }: Props) => {
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    setIsVisible(true);
+  }, []);
   const [isClick, setClick] = useState(false);
   return (
-    <div className="  bg-white hover:shadow-2xl hover:transition-all hover:duration-300">
+    <div
+      className={cn(
+        " transition-opacity duration-1000 ease-in-out transform bg-white hover:shadow-2xl hover:transition-all hover:duration-300",
+        isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+      )}
+    >
       <div className=" border rounded-sm flex flex-col justify-between">
         <div className="w-fit">
           <Image src={image} alt="asd" width={1000} height={1000} />
