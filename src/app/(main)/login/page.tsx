@@ -9,7 +9,7 @@ type Props = {};
 const Login = (props: Props) => {
   return (
     <div className=" font-poppins bg-white  flex justify-around items-center overflow-hidden  ">
-      <div className=" w-full lg:w-[40%] pl-12 py-8 ">
+      <div className=" w-full lg:w-[40%] px-6 py-8 ">
         <div className="py-4">
           <Logo />
         </div>
