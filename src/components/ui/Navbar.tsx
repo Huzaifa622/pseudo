@@ -25,7 +25,7 @@ const Navbar = (props: Props) => {
   console.log(pathname);
   return (
     <div className="bg-white w-full">
-      <div className="w-[80%]  mx-auto py-2 font-ubuntu flex justify-between items-center">
+      <div className="w-[85%]  mx-auto py-2 font-ubuntu flex justify-between items-center">
         {pathname === "/profile" ||
         pathname === "/network" ||
         pathname === "/program-ai" ? (
@@ -34,7 +34,7 @@ const Navbar = (props: Props) => {
           <Logo />
         )}
 
-        <nav className=" hidden lg:flex   items-center gap-24 text-sm font-semibold">
+        <nav className=" hidden lg:flex   items-center gap-16 text-sm font-semibold">
           <ul className="flex gap-10">
             <Link
               href={"/"}
@@ -113,6 +113,22 @@ const Navbar = (props: Props) => {
                 )}
               ></div>
               Blogs
+            </Link>
+            <Link
+              className={cn(
+                "relative",
+                pathname === "/program-ai" && "text-[#008080]"
+              )}
+              href={"/program-ai"}
+            >
+              <div
+                className={cn(
+                  pathname === "/program-ai"
+                    ? "before:absolute before:w-full before:h-[1px] before:bg-[#008080] before:bottom-0 before:left-0"
+                    : ""
+                )}
+              ></div>
+              ProgramAI
             </Link>
             <Link
               className={cn(
