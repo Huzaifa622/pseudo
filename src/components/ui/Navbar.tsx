@@ -190,6 +190,12 @@ const Navbar = (props: Props) => {
                       <Link href={"/blogs"}> Blogs</Link>
                     </SheetClose>
                     <SheetClose asChild>
+                      <Link href={"/program-ai"}> ProgramAI</Link>
+                    </SheetClose>
+                    <SheetClose asChild>
+                      <Link href={"/login"}> Login</Link>
+                    </SheetClose>
+                    <SheetClose asChild>
                       <Link href={"/profile"}>
                         <Avatar
                           className={cn(
