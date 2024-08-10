@@ -94,7 +94,7 @@ const networks = [
 ];
 const NetworkSection = (props: Props) => {
   return (
-    <div className="py-4 px-8 flex flex-col justify-center items-center gap-10">
+    <div className="py-4 px-4 flex flex-col justify-center items-center gap-10">
       <div className="relative w-full lg:w-[70%] mx-auto">
         <input
           type="text"
@@ -106,7 +106,7 @@ const NetworkSection = (props: Props) => {
         </button>
       </div>
       <div className="flex lg:flex-row flex-col justify-center items-start w-full gap-5">
-        <aside className="w-full lg:w-[45%] p-2 bg-white border rounded-md border-gray-300">
+        <aside className="w-full lg:w-[30%] p-2 bg-white border rounded-md border-gray-300">
           <Accordion
             type="multiple"
             className="w-full "
@@ -167,9 +167,9 @@ const NetworkSection = (props: Props) => {
             </button>
           </div>
         </aside>
-        <div className="flex flex-wrap items-center justify-center   gap-x-2  gap-y-20">
+        <div className="w-full  flex flex-wrap items-center justify-center lg:justify-start   gap-x-2  gap-y-20">
           {networks.map((n, idx) => (
-            <div key={idx}>
+            <div key={idx} className="w-full md:w-[30%] lg:w-[22%]">
               <NetworkCard
                 image={n.image}
                 pImage={n.pImage}

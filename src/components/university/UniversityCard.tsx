@@ -29,7 +29,7 @@ const UniversityCard = ({
   }, []);
   return (
     <Link
-      href={"/program-ai"}
+      href={"/programs"}
       className={cn(
         "transition-opacity duration-1000 ease-in-out transform w-full  bg-white sm:w-[40%] md:w-[33%] lg:w-[20%]  hover:shadow-2xl hover:transition-all hover:duration-300 border border-gray-300 rounded-xl",
         isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"

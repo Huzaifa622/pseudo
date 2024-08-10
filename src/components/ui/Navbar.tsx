@@ -16,6 +16,7 @@ import {
   SheetClose,
   SheetFooter,
 } from "@/components/ui/sheet";
+import Logo2 from "./Logo2";
 
 type Props = {};
 
@@ -25,7 +26,13 @@ const Navbar = (props: Props) => {
   return (
     <div className="bg-white w-full">
       <div className="w-[80%]  mx-auto py-2 font-ubuntu flex justify-between items-center">
-        <Logo />
+        {pathname === "/profile" ||
+        pathname === "/network" ||
+        pathname === "/program-ai" ? (
+          <Logo2 />
+        ) : (
+          <Logo />
+        )}
 
         <nav className=" hidden lg:flex   items-center gap-24 text-sm font-semibold">
           <ul className="flex gap-10">
@@ -92,8 +99,11 @@ const Navbar = (props: Props) => {
               University Side
             </Link>
             <Link
-              className={cn("relative", pathname === "/" && "text-[#008080]")}
-              href={"/blogs"}
+              className={cn(
+                "relative",
+                pathname === "/blogs" && "text-[#008080]"
+              )}
+              href={"/"}
             >
               <div
                 className={cn(

@@ -27,9 +27,11 @@ const NetworkCard = ({
 }: Props) => {
   const [isClick, setClick] = useState(false);
   return (
-    <div className="w-[230.06px]  bg-white hover:shadow-2xl hover:transition-all hover:duration-300">
+    <div className="  bg-white hover:shadow-2xl hover:transition-all hover:duration-300">
       <div className=" border rounded-sm flex flex-col justify-between">
-        <Image src={image} alt="asd" width={228.3} height={228.3} />
+        <div className="w-fit">
+          <Image src={image} alt="asd" width={1000} height={1000} />
+        </div>
         <div className="p-2 flex flex-col justify-between  gap-2">
           <div className="flex items-center gap-2">
             <Image
@@ -52,7 +54,7 @@ const NetworkCard = ({
               )}
             </div>
           </div>
-          <p className="h-[52.69px]">{subTitle}</p>
+          <p className="h-[52.69px] text-sm">{subTitle}</p>
           <div className="flex gap-1 text-[10px]">
             <Star color="#FFBE5B" size={13} />
             {stars}({ratings})
