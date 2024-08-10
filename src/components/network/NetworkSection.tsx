@@ -106,7 +106,7 @@ const NetworkSection = (props: Props) => {
         </button>
       </div>
       <div className="flex lg:flex-row flex-col justify-center items-start w-full gap-5">
-        <aside className="w-full lg:w-[40%] p-2 bg-white border rounded-md border-gray-300">
+        <aside className="w-full lg:w-[45%] p-2 bg-white border rounded-md border-gray-300">
           <Accordion
             type="multiple"
             className="w-full "

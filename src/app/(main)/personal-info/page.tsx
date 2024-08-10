@@ -10,7 +10,7 @@ type Props = {};
 const Personal = (props: Props) => {
   return (
     <div className="flex  justify-evenly font-ubuntu items-center">
-      <div className="w-full lg:w-[40%] px-12 py-8">
+      <div className="bg-white my-4 rounded-xl hover:shadow-2xl w-full lg:w-[40%] px-8 py-8">
         <div className="py-4">
           <Logo />
         </div>
@@ -42,9 +42,9 @@ const Personal = (props: Props) => {
           </div>
 
           {/* Gender */}
-          <div className="flex mb-4 items-center gap-16 px-4 py-2 text-[#666666]">
+          <div className="flex mb-4 items-center  gap-10 py-2 text-[#666666]">
             <label className="">Gender</label>
-            <div className="flex space-x-8">
+            <div className="flex space-x-8 flex-wrap">
               <label className="flex items-center">
                 <input
                   type="radio"

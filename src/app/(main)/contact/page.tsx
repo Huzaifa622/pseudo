@@ -7,7 +7,7 @@ type Props = {};
 const Contact = (props: Props) => {
   return (
     <div className="flex  justify-evenly font-ubuntu items-end">
-      <div className="w-[40%] pl-12 py-8">
+      <div className="w-full lg:w-[40%] px-12 py-8">
         <div className="py-4">
           <Logo />
         </div>
@@ -113,7 +113,7 @@ const Contact = (props: Props) => {
           </div>
         </form>
       </div>
-      <div className="pb-10">
+      <div className="pb-10 lg:block hidden">
         <PersonalImage />
       </div>
     </div>

@@ -64,7 +64,7 @@ const Navbar = (props: Props) => {
                 "relative",
                 pathname === "/llm" && "text-[#008080]"
               )}
-              href={"/llm"}
+              href={"/"}
             >
               <div
                 className={cn(
@@ -92,10 +92,7 @@ const Navbar = (props: Props) => {
               University Side
             </Link>
             <Link
-              className={cn(
-                "relative",
-                pathname === "/blogs" && "text-[#008080]"
-              )}
+              className={cn("relative", pathname === "/" && "text-[#008080]")}
               href={"/blogs"}
             >
               <div

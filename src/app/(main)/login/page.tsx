@@ -1,6 +1,7 @@
 import GoogleSignUpButton from "@/components/ui/GoogleSignUpButton";
 import Logo from "@/components/ui/Logo";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 type Props = {};
@@ -18,7 +19,7 @@ const Login = (props: Props) => {
           </h1>
           <div className="mt-1 flex flex-col items-start gap-1 text-xs">
             <h5 className="text-[#8D8D8D] text-nowrap">No Account ?</h5>
-            <button>Sign Up</button>
+            <Link href={"/personal-info"}>Sign Up</Link>
           </div>
         </div>
         <h1 className="text-4xl font-medium">Sign in</h1>

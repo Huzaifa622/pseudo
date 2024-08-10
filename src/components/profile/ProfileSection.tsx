@@ -6,22 +6,22 @@ type Props = {};
 
 const ProfileSection = (props: Props) => {
   return (
-    <div className="px-28 py-16 font-ubuntu">
-      <div className="flex justify-end px-8">
+    <div className="px-4 md:px-28 py-16 font-ubuntu">
+      <div className="flex justify-center md:justify-end px-8">
         <Link
           href={"/contact"}
-          className="bg-[#e5f2f2] text-[#008080] px-6 py-2 rounded-lg"
+          className="bg-[#e5f2f2] text-[#008080] px-6 py-4 rounded-lg"
         >
           Contact Us
         </Link>
       </div>
-      <div className="flex flex-col px-2">  
+      <div className="flex flex-col px-2">
         <h1 className="text-5xl text-center font-bold text-[#008080]">
           Profile
         </h1>
         <div className="flex justify-between items-center py-8">
           <div className="flex items-center gap-4">
-            <Avatar className="w-[113px] h-[113px] rounded-full">
+            <Avatar className="w-[15%] rounded-full">
               <AvatarImage
                 src="https://github.com/shadcn.png"
                 className="rounded-full"
@@ -43,15 +43,15 @@ const ProfileSection = (props: Props) => {
           Personal Info
         </label>
         <form>
-          <div className="flex mb-4">
-            <div className="w-1/2 mr-2">
+          <div className="flex md:flex-row gap-4 flex-col mb-4">
+            <div className="md:w-1/2 ">
               <input
                 type="text"
                 placeholder="First Name"
                 className="w-full py-4 px-4 border border-gray-300 rounded-lg"
               />
             </div>
-            <div className="w-1/2 ml-2">
+            <div className="md:w-1/2 ">
               <input
                 type="text"
                 placeholder="Last Name"
