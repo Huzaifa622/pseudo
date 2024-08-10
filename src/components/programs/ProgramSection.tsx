@@ -6,8 +6,8 @@ type Props = {};
 
 const ProgramSection = (props: Props) => {
   return (
-    <div className="py-10 px-16">
-      <div className="flex gap-4 mb-8">
+    <div className="py-10 px-8">
+      <div className="flex md:flex-row flex-col gap-4 mb-8 px-4">
         <select className="flex-1  px-4 rounded-lg text-[#7E7E7E] shadow-xl py-4">
           <option value="" disabled selected>
             Select Country
@@ -28,7 +28,7 @@ const ProgramSection = (props: Props) => {
           <option value="Science">Science</option>
         </select>
       </div>
-      <div className="flex gap-4">
+      <div className="flex md:flex-row flex-col gap-4 px-4">
         <input
           type="text"
           className="flex-1  px-4 rounded-lg text-[#7E7E7E] shadow-xl py-4"

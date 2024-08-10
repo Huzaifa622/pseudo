@@ -27,7 +27,7 @@ const About1 = (props: Props) => {
               accusantium doloremque laudantium, totam rem aperiam, eaque.
             </h2>
             <div className="">
-              <p className="text-base leading-[30px] text-[#6C747C] w-[90%]">
+              <p className="text-base leading-[30px] text-[#6C747C] w-full md:w-[90%]">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
                 vitae urna diam. Maecenas commodo sem quis vulputate hendrerit.
                 Donec sollicitudin erat at libero varius dictum. Maecenas tempus

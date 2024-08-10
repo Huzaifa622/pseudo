@@ -62,7 +62,7 @@ const ProfileSection = (props: Props) => {
           <div className="flex">
             <div className="flex mb-4 items-center gap-16 px-4 py-2 text-[#666666]">
               <label className="">Gender</label>
-              <div className="flex space-x-8">
+              <div className="flex flex-wrap space-x-8">
                 <label className="flex items-center">
                   <input
                     type="radio"
@@ -93,8 +93,8 @@ const ProfileSection = (props: Props) => {
               </div>
             </div>
           </div>
-          <div className="flex mb-4">
-            <div className="w-1/2 flex space-x-4 mb-4 text-[#666666]">
+          <div className="flex md:flex-row gap-4 flex-col mb-4">
+            <div className="md:w-1/2 flex space-x-4 mb-4 text-[#666666]">
               <select className="w-full py-4 px-4 border border-gray-300 rounded-lg">
                 <option value="">Date</option>
                 {/* Add options for dates */}
@@ -140,7 +140,7 @@ const ProfileSection = (props: Props) => {
               </select>
             </div>
 
-            <div className="w-1/2 ml-2">
+            <div className="w-full md:w-1/2 ">
               <input
                 type="text"
                 placeholder="Country of Birth"
@@ -148,15 +148,15 @@ const ProfileSection = (props: Props) => {
               />
             </div>
           </div>
-          <div className="flex mb-4">
-            <div className="w-1/2 mr-2">
+          <div className="flex md:flex-row gap-4 flex-col mb-4">
+            <div className="md:w-1/2 ">
               <input
                 type="text"
                 placeholder="Nationality"
                 className="w-full py-4 px-4 border border-gray-300 rounded-lg"
               />
             </div>
-            <div className="w-1/2 ml-2">
+            <div className="md:w-1/2">
               <input
                 type="text"
                 placeholder="2nd Nationality"
@@ -171,15 +171,15 @@ const ProfileSection = (props: Props) => {
           Contact Info
         </label>
         <form>
-          <div className="flex mb-4">
-            <div className="w-1/2 mr-2">
+          <div className="flex md:flex-row gap-4 flex-col mb-4">
+            <div className="md:w-1/2">
               <input
                 type="text"
                 placeholder="Street number and additional info"
                 className="w-full py-4 px-4 border border-gray-300 rounded-lg"
               />
             </div>
-            <div className="w-1/2 ml-2">
+            <div className="md:w-1/2 ">
               <input
                 type="text"
                 placeholder="Postcode"
@@ -187,15 +187,15 @@ const ProfileSection = (props: Props) => {
               />
             </div>
           </div>
-          <div className="flex mb-4">
-            <div className="w-1/2 mr-2">
+          <div className="flex md:flex-row gap-4 flex-col mb-4">
+            <div className="md:w-1/2 ">
               <input
                 type="text"
                 placeholder="Town/City"
                 className="w-full py-4 px-4 border border-gray-300 rounded-lg"
               />
             </div>
-            <div className="w-1/2 ml-2">
+            <div className="md:w-1/2 ">
               <input
                 type="text"
                 placeholder="Country"
@@ -203,15 +203,15 @@ const ProfileSection = (props: Props) => {
               />
             </div>
           </div>
-          <div className="flex mb-4">
-            <div className="w-1/2 mr-2">
+          <div className="flex md:flex-row gap-4 flex-col mb-4">
+            <div className="md:w-1/2 ">
               <input
                 type="text"
                 placeholder="Phone number"
                 className="w-full py-4 px-4 border border-gray-300 rounded-lg"
               />
             </div>
-            <div className="w-1/2 ml-2">
+            <div className="md:w-1/2">
               <input
                 type="text"
                 placeholder="Email"

@@ -73,7 +73,7 @@ const program = [
 const AISection = (props: Props) => {
   return (
     <div className="px-18 py-16 font-ubuntu">
-      <div className="flex justify-end px-8">
+      <div className="flex justify-center md:justify-end px-8 py-4">
         <button className="bg-[#e5f2f2] text-[#008080] px-6 py-2 rounded-lg">
           Contact Us
         </button>
@@ -126,7 +126,10 @@ const AISection = (props: Props) => {
         </div>
         <div className="flex flex-wrap justify-center items-center gap-x-8  gap-y-16">
           {program.map((p, idx) => (
-            <div key={idx}>
+            <div
+              key={idx}
+              className="w-full bg-white md:w-[40%] lg:w-[20%] border hover:shadow-2xl rounded-[20px] "
+            >
               <AICard
                 image={p.image}
                 title={p.title}

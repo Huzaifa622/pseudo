@@ -4,7 +4,7 @@ import { Eye } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
-import { CiLocationOn } from "react-icons/ci";
+import { CiCreditCard1, CiLocationOn } from "react-icons/ci";
 import { MdOutlineLocationOn } from "react-icons/md";
 
 type Props = {
@@ -61,12 +61,6 @@ const UniversityCard = ({
           <div className="flex flex-col gap-4 pt-5 justify-between text-[#696984]">
             <div className="flex items-center gap-2">
               <div className="bg-[#ECE9EE] p-3 rounded-xl">
-                <Eye size={24} color="#49275C" />
-              </div>
-              {views}
-            </div>
-            <div className="flex items-center gap-2">
-              <div className="bg-[#ECE9EE] p-3 rounded-xl">
                 <MdOutlineLocationOn size={24} color="#49275C" />
               </div>
               <div>
@@ -74,7 +68,16 @@ const UniversityCard = ({
                 <h1 className="text-[#49275C] font-medium">Germany</h1>{" "}
               </div>
             </div>
-            <button className="bg-pink-50 w-full text-[#D93471] rounded-xl hover:bg-pink-100   py-2 ">
+            <div className="flex items-center gap-2">
+              <div className="bg-[#ECE9EE] p-3 rounded-xl">
+                <CiCreditCard1 size={24} color="#49275C" />
+              </div>
+              <div>
+                <h1 className="text-sm">Tuition fee</h1>{" "}
+                <h1 className="text-[#49275C] font-medium">$ 1000</h1>{" "}
+              </div>
+            </div>
+            <button className=" w-full text-[#D93471] rounded-xl hover:bg-pink-100   py-2 ">
               Read More
             </button>
           </div>

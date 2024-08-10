@@ -29,16 +29,16 @@ const teachers = [
 
 const Teachers = (props: Props) => {
   return (
-    <div className="flex flex-col justify-center items-center gap-8 px-12 py-8">
+    <div className="flex flex-col justify-center items-center gap-8 px-2 py-8">
       <div className="flex flex-col justify-center items-end ">
-        <div className="flex justify-items-end items-end">
+        <div className="flex justify-items-end py-4 items-end">
           <button className=" text-right text-[#018080]">
             <span>See All</span>
           </button>
         </div>
-        <div className="flex flex-wrap gap-4  justify-center items-center">
+        <div className="flex flex-wrap gap-4 w-full justify-center items-center">
           {teachers.map((t, idx) => (
-            <div key={idx}>
+            <div key={idx} className="sm:w-[40%] md:w-[30%] lg:w-[22%]">
               <HomeCard
                 image={t.image}
                 title={t.title}
